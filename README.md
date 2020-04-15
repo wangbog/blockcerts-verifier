@@ -11,13 +11,13 @@ The component is developed with Polymer 3.
 To use the component in your project, install it via:
 
 ```
-  npm i @blockcerts/blockcerts-verifier
+  npm i @wangbog/blockcerts-verifier
 ```
 
 If your project **does not require support for IE11**, you can use the following build:
 
 ```html
-  <script src="node_modules/@blockcerts/blockcerts-verifier/dist/main.js"></script>
+  <script src="node_modules/@wangbog/blockcerts-verifier/dist/main.js"></script>
 
   <blockcerts-verifier></blockcerts-verifier>
 ```
@@ -31,7 +31,7 @@ If your project **requires support for IE11**, you will need to use the ie11 bui
 ```html
   <script src="node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
   <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-  <script src="node_modules/@blockcerts/blockcerts-verifier/dist/ie11.js"></script>
+  <script src="node_modules/@wangbog/blockcerts-verifier/dist/ie11.js"></script>
 ```
 Please note that because this is transpiled to ES5, the custom-elements-es5-adapter code is required for it to work properly in more modern browsers.
 
