@@ -1,5 +1,5 @@
 import sinon from 'sinon';
-import { Certificate } from '@blockcerts/cert-verifier-js/dist/verifier-es';
+import { Certificate } from '@wangbog/cert-verifier-js/dist/verifier-es';
 import domain from '../../../src/domain';
 import VERIFICATION_STATUS from '../../../src/constants/verificationStatus';
 import validCertificateStepsAssertions from '../../assertions/validCertificateSteps';

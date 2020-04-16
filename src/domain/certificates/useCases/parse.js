@@ -1,4 +1,4 @@
-import { Certificate } from '@blockcerts/cert-verifier-js/dist/verifier-es';
+import { Certificate } from '@wangbog/cert-verifier-js/dist/verifier-es';
 
 export default function parse (definition, options = {}) {
   if (!options.locale) {

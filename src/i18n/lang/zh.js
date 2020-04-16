@@ -17,7 +17,7 @@ export default {
     certified: '认证于',
     closeButton: '点击关闭',
     downloadLink: '下载JSON格式的记录',
-    dragAndDropHint: '（您也可以拖拽证书文件到此处）。',
+    dragAndDropHint: '（您也可以拖拽证书文件到此处）',
     fileUpload: '选择证书JSON文件',
     issued: '发布于',
     issueDate: '发布日期',
