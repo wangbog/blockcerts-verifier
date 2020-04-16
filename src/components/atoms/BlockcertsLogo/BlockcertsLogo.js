@@ -2,7 +2,7 @@ import { html } from '@polymer/lit-element';
 import CSS from './_components.blockcerts-logo-css';
 import getText from '../../../i18n/getText';
 
-function simpleLogo () {
+/*function simpleLogo () {
   return html`
     <svg class='buv-qa-logo--simple  buv-c-logo--small' viewBox="0 0 113 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs></defs>
@@ -27,9 +27,18 @@ function simpleLogo () {
     </svg>
     <span class='buv-u-visually-hidden'>${getText('text.brandname')}</span>
   `;
+}*/
+
+function simpleLogo () {
+  return html`
+    <svg class='buv-qa-logo--simple  buv-c-logo--small' viewBox="0 0 113 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <embed src="https://www.pku.edu.cn/Uploads/Picture/2019/12/26/s5e04176fbbfa3.png" style="display:block;width:114px;height:32px" />
+    </svg>
+    <span class='buv-u-visually-hidden'>${getText('text.brandname')}</span>
+  `;
 }
 
-function logoWithBranding () {
+/*function logoWithBranding () {
   return html`
     <svg class='buv-qa-logo--branded  buv-c-logo--medium' version="1.1" viewBox="0 0 686 163" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fill-rule="evenodd">
@@ -57,12 +66,33 @@ function logoWithBranding () {
     </svg>
     <span class='buv-u-visually-hidden'>${getText('text.motto')}</span>
   `;
+}*/
+
+function logoWithBranding () {
+  return html`
+    <svg class='buv-qa-logo--branded  buv-c-logo--medium' version="1.1" viewBox="0 0 113 16" xmlns="http://www.w3.org/2000/svg">
+      <embed src="https://www.pku.edu.cn/Uploads/Picture/2019/12/26/s5e04176fbbfa3.png" style="display:block;width:114px;height:32px" />
+    </svg>
+    <span class='buv-u-visually-hidden'>${getText('text.motto')}</span>
+  `;
 }
+
+/*const BlockcertsLogo = ({ className, showMotto = false } = {}) => {
+  return html`
+  ${CSS}
+  <a href='https://www.blockcerts.org' title='${getText('text.blockcertsHint')}' class$='buv-c-logo  ${className}'>
+    ${
+  showMotto
+    ? logoWithBranding()
+    : simpleLogo()
+}
+  </a>`;
+};*/
 
 const BlockcertsLogo = ({ className, showMotto = false } = {}) => {
   return html`
   ${CSS}
-  <a href='https://www.blockcerts.org' title='${getText('text.blockcertsHint')}' class$='buv-c-logo  ${className}'>
+  <a href='https://www.pku.edu.cn' title='${getText('text.blockcertsHint')}' class$='buv-c-logo  ${className}'>
     ${
   showMotto
     ? logoWithBranding()
