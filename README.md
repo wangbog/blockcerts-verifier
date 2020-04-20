@@ -1,10 +1,12 @@
 # @wangbog/blockcerts-verifier
 
-[![Build Status](https://travis-ci.com/blockchain-certificates/blockcerts-verifier.svg?branch=master)](https://travis-ci.com/blockchain-certificates/blockcerts-verifier)
-[![codecov](https://codecov.io/gh/blockchain-certificates/blockcerts-verifier/branch/master/graph/badge.svg)](https://codecov.io/gh/blockchain-certificates/blockcerts-verifier)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+基于@blockcerts/blockcerts-verifier (A standalone universal viewer &amp; verifier for blockcerts credentials)， @wangbog修改的实现。
 
-A standalone universal viewer &amp; verifier for blockcerts credentials
+本实现相较于官方版本，做了中文的支持。修改后的版本同样部署在了npm中（@wangbog/blockcerts-verifier），可以使用npm直接安装并使用。
+
+值得注意的是，证书的验证逻辑实际上是在@wangbog/cert-verifier-js项目中实现的。本项目最主要的用处是基于@wangbog/cert-verifier-js，定义了<blockcerts-verifier>这个HTML标签，在您的web项目中可以在前端代码中使用该标签，用于展示、验证证书。请注意，验证过程实际上是由用户浏览器发起的。
+
+以下文档全部fork自@blockcerts/blockcerts-verifier官方github项目，除了nmp包的scope由@blockcerts调整为@wangbog外，未做其余调整。
 
 # Production
 The component is developed with Polymer 3.
